@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.header .header-image{
+    width: auto;
+    transition: max-width 1s;
+    border-radius: 20px;
+    padding-top: 50px;
+}
+
+.header-image-expanded {
+    /* min-width:400px; */
+    max-width: 420px;
+}
+
+.header-image-contracted{
+    /* min-width: 60px; */
+    max-width: 100px;
+}
+
+.header .header-text{
+    font-family: "Amatic SC", sans-serif;
+    transition: font-size 1s;
+}
+
+.header-text-expanded {
+    font-size: 35px;
+    color: rgb(0, 140, 255);
+    font-style: bold;
+}
+
+.header-text-contracted {
+    font-size: 20px;
+}

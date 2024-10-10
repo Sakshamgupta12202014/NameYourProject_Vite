@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+.result1{
+    display: none;
+}
+
+.result2{
+    text-align: center;
+    color: rgb(12, 115, 193);
+    font-family: "Amatic SC", sans-serif;
+    font-size: 35px;
+    font-style: bold;
+    display: block;
+}
+
+.resultBox{
+    border: 1px solid #D3D3D3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    height: 70px;
+    padding: 10px;  
+    margin: 10px 0;     
+    justify-content: center;
+    border-radius: 8px;    
+    background-color: #FFDAB9;
+    text-align: center;
+    font-style: bold;
+    transition: transform 0.2s ease-in-out;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 800;
+    color: rgb(0, 0, 0);   
+    font-size: 25px;
+}
+
+.resultBox:hover {
+    transform: scale(1.02);    /* Slightly enlarges on hover for interactivity */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+
+}
+
+.outerDiv{
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 15px; /* Adds space between items */
+    width: 100%; /* Ensure enough space for the items */
+    justify-content: center;
+    align-items: center;
+}

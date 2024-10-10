@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+
+body {
+  background-color: antiquewhite;
+}
+
+.mainHome{
+  background-color: antiquewhite;
+}
+
+.homeDiv {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  align-items: center; /* Center horizontally */
+  height: 100vh;
+  padding: 30px;
+}
+
+.logo {
+  height: 250px;
+  padding-top: 50px;
+}
+
+.heroTitle {
+  margin-top: 20px;
+  font-size: 2rem;
+  font-family: "Amatic-sc, sans-serif";
+  font-style: normal;
+  text-decoration: underline;
+}
+.heroSubtitle {
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.ctaButton {
+  background-color: #00796b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.ctaButton:hover {
+  background-color: #004d40;
+}
+
+/* Features Section */
+.featuresSection {
+  padding: 50px 20px;
+
+}
+
+.featuresList {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.featureItem {
+  max-width: 200px;
+  margin: 20px;
+}
+
+.featureIcon {
+  font-size: 2rem;
+}
+
+.featureItem p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+
+/* Examples Section */
+.examplesSection {
+    padding: 50px 20px;
+}
+
+.exampleNames {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.exampleName {
+  background-color: #00796b;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.exampleName:hover {
+  background-color: #004d40;
+}
+
+
+/* Footer */
+.footer {
+  background-color: #004d40;
+  color: white;
+  padding: 20px;
+}
+
+.footerLinks {
+  margin-top: 10px;
+}
+
+.footerLinks a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footerLinks a:hover {
+  text-decoration: underline;
+}
