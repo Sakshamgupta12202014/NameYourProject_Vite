@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.css";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function About() {
   return (
@@ -15,7 +16,15 @@ function About() {
 
         {/* Mission Statement */}
         <section className="missionSection">
-          <h2 style={{ fontFamily: "Amatic SC" ,fontSize : "35px" ,fontWeight : "600"}}>Our Mission</h2>
+          <h2
+            style={{
+              fontFamily: "Amatic SC",
+              fontSize: "35px",
+              fontWeight: "600",
+            }}
+          >
+            Our Mission
+          </h2>
           <p>
             Our mission is to simplify the naming process for creators,
             entrepreneurs, and innovators. We provide an intuitive and
@@ -75,7 +84,9 @@ function About() {
           <p>
             Try our name generator and find the perfect name for your project!
           </p>
-          <button className="ctaButton">Generate Names</button>
+          <Link to="/searchname">
+            <button className="ctaButton">Generate Names</button>
+          </Link>
         </div>
       </div>
     </div>
