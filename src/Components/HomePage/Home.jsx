@@ -1,12 +1,13 @@
 import React from "react";
 import "./Home.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import logo from "./file.png";
 
 function Home() {
   return (
     <div className="mainHome">
       <div className="homeDiv">
-        <img src="src\Components\HomePage\file-removebg-preview (1).png" className="logo" />
+        <img src={logo} className="logo" />
         <h1 className="heroTitle">
           Welcome to the Ultimate Project Name Generator!
         </h1>

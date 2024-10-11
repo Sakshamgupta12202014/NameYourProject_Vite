@@ -7,7 +7,7 @@ class search extends React.Component {
     render() {
         return (
 
-            <div className='box'>
+            <div className='box' style={{backgroundColor : "antiquewhite"}}>
                 <input onChange = { (event) => {
                     this.props.onInputChange(event.target.value)
                     
