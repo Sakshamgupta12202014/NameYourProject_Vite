@@ -1,7 +1,8 @@
-import "./SignUp.css";
-import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import "./SignUp.css"
+import React, { useState } from "react"
+import { BrowserRouter as Router, Routes, Route, Link,useNavigate } from "react-router-dom"
 import  signup_image from "./signup_image.webp"
+
 
 function SignUp() {
   const [formData, setFormData] = useState({
@@ -11,6 +12,7 @@ function SignUp() {
     confirmPassword: "",
   });
 
+  const navigate = useNavigate();
   const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
@@ -56,7 +58,11 @@ function SignUp() {
       alert("Passwords do not match");
       return;
     }
+    navigate("/home");
+    alert("Sign Up Successful");
     console.log("Submitted data: ", formData);
+
+
   };
 
   return (

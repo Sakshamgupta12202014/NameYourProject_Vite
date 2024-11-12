@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-
+import "./navbar.css"
 
 function Navbar() {
   return (
@@ -33,6 +33,10 @@ function Navbar() {
         <div className="navItems signinbtn">
           <Link to="/signin" className="nav-link">
             <button className="nav-link-btn">Sign-in</button>
+          </Link>
+          /
+          <Link to="/signup" className="nav-link">
+            <button className="nav-link-btn">Sign-up</button>
           </Link>
         </div>
       </div>

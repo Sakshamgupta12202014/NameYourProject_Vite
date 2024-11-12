@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./HomePage/Home";
 import App from "./App/App";
-import "./Start.css";
+// import "./Start.css";
 import FollowUs from "./followUs/FollowUs";
 import About from "./AboutUs/About";
 import SignIn from "./signinPage/SignIn";

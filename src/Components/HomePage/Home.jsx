@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Home.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import logo from "./file.png";
@@ -6,6 +6,31 @@ import Navbar from "../Navbar/navbar";
 
 
 function Home() {
+
+  // const str = "example";
+  // const arr = str.split("");
+  // console.log(arr);
+
+  const headingText = "Welcome to the Ultimate Project Name Generator!";
+  const letters = headingText.split("");
+  const [currentLetterIndex, setCurrentWordIndex] = useState(0);
+
+
+  useEffect(() => {
+    const interId = setInterval(() => {
+      setCurrentWordIndex(prevIndex => {
+        if(prevIndex < letters.length - 1){
+          return prevIndex + 1;
+        }else {
+          clearInterval(interId);
+          return prevIndex; // Stop updating once done
+        }
+      })
+    }, 100);
+
+    return () => clearInterval(interId);
+  }, []);
+
   return (
 
 
@@ -18,7 +43,7 @@ function Home() {
       <div className="homeDiv">
         <img loading="lazy" src={logo} className="logo" />
         <h1 className="heroTitle">
-          Welcome to the Ultimate Project Name Generator!
+        {letters.slice(0, currentLetterIndex + 1).join("")}
         </h1>
         <p className="heroSubtitle">
           Your Next Big Idea Deserves the Perfect Name.
