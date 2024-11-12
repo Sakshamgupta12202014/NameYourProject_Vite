@@ -1,10 +1,14 @@
 import React from "react";
 import "./Header.css";
 import image from "./chat.jpg";
+import Navbar from "../Navbar/navbar";
 
 const Header = ({ headTitle, headerImageExpanded, headerTextExpanded }) => {
   return (
     <div className="header" style={{ backgroundColor: "antiquewhite" }}>
+
+    <Navbar/>
+
       <img
         className={`header-image ${
           headerImageExpanded

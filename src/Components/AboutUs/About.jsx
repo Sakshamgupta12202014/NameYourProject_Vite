@@ -1,10 +1,14 @@
 import React from "react";
 import "./About.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Navbar from "../Navbar/navbar";
 
 function About() {
   return (
     <div>
+
+    <Navbar />
+
       <div className="aboutUsContainer">
         {/* Page Header */}
         <h1 className="aboutUsTitle">About Us</h1>

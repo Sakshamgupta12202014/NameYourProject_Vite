@@ -3,10 +3,14 @@ import "./FollowUs.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import Navbar from "../Navbar/navbar";
 
 function FollowUs() {
   return (
     <div>
+      
+      <Navbar/>
+
       <div className="followUsContainer">
         {/* Page Header */}
         <h1 className="followUsTitle">Follow Us & Stay Connected</h1>

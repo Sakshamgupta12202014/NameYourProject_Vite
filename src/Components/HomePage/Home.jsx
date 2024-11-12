@@ -2,10 +2,19 @@ import React from "react";
 import "./Home.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import logo from "./file.png";
+import Navbar from "../Navbar/navbar";
+
 
 function Home() {
   return (
+
+
+  
+
     <div className="mainHome">
+
+    <Navbar />
+
       <div className="homeDiv">
         <img loading="lazy" src={logo} className="logo" />
         <h1 className="heroTitle">

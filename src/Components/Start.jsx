@@ -12,7 +12,7 @@ import SignUp from "./signupPage/SignUp";
 function Start() {
   return (
     <Router>
-      <div className="navBar">
+      {/* <div className="navBar">
         <div className="navItems">
           <Link to="/" className="nav-link">
             Home
@@ -42,7 +42,7 @@ function Start() {
             <button className="nav-link-btn">Sign-in</button>
           </Link>
         </div>
-      </div>
+      </div> */}
 
       <Routes>
         <Route path="/" element={<Home />} />
