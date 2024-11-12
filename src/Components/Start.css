@@ -1,38 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Nova+Square&family=Protest+Strike&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Londrina+Sketch&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Nova+Square&family=Protest+Strike&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Londrina+Sketch&display=swap");
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .navBar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%; /* Make the navbar span the full width of the page */
-    z-index: 1000; /* Ensure it stays on top of other elements */
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    background-color: #8b4513;
-    padding: 15px;
+  /* top: 0;
+    left: 0; */
+  width: 100%; /* Make the navbar span the full width of the page */
+  z-index: 1000; /* Ensure it stays on top of other elements */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  background-color: #8b4513;
+  padding: 15px;
+  /* position: fixed; */
 }
 
 .navItems {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .nav-link {
-    font-family: "Crimson Text", serif;
-    font-weight: 700;
-    font-style: normal;
-    color: floralwhite;
-    text-decoration: none;
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: floralwhite;
+  text-decoration: none;
 }
 
-.nav-link:hover{
-    text-decoration: underline;    
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.nav-link-btn {
+  background-color: #00796b;
+  color: white;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.signinbtn {
+  margin-left: auto;
+  margin-right: 30px;
 }

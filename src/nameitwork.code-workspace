@@ -5,6 +5,12 @@
 		},
 		{
 			"path": ".."
+		},
+		{
+			"path": "../../../../Project01"
+		},
+		{
+			"path": "../../backendN_Y_P"
 		}
 	],
 	"settings": {}

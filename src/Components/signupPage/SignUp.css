@@ -1,0 +1,82 @@
+/* SignUp.css */
+.sign-up-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: antiquewhite;
+}
+
+.sign-up-card {
+  background-color: #fff;
+  padding: 40px;
+  /* border-radius: 8px; */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+.sign-up-card h2 {
+  margin-bottom: 20px;
+  font-family: "Amatic SC", sans-serif; /* Same font as SignIn page */
+  font-size: 2.5rem;
+}
+
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.sign-up-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+.sign-up-btn:hover {
+  background-color: #0056b3;
+}
+
+.sign-in-link {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.sign-in-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.sign-in-link a:hover {
+  text-decoration: underline;
+}
+
+.form-image1{
+  height: 613px;
+
+}

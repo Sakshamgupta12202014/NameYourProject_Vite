@@ -7,7 +7,7 @@ function Home() {
   return (
     <div className="mainHome">
       <div className="homeDiv">
-        <img src={logo} className="logo" />
+        <img loading="lazy" src={logo} className="logo" />
         <h1 className="heroTitle">
           Welcome to the Ultimate Project Name Generator!
         </h1>
