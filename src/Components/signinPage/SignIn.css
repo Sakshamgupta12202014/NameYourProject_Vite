@@ -1,6 +1,5 @@
 /* SignIn.css */
 .sign-in-container {
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,7 +80,6 @@
 
 } */
 
-.form-image{
+.form-image {
   height: 452px;
-  
 }

@@ -8,36 +8,60 @@ function SignIn() {
   const [formData, setFormData] = useState({ email: "", password: "" });
   const navigate = useNavigate();
 
+  const [errors, setErrors] = useState({});
+
   const handleChange = (e) => {
+
+    let newErrors = { ...errors };
     const { name, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
     }));
+
+    // if (name === 'name' && !value.trim()) {
+    //   newErrors.name = "Name is required";
+    // } else {
+    //   delete newErrors.name;
+    // }
+
+    if (name === 'email' && !value.includes('@')) {
+      newErrors.email = "Valid email required";
+    } else {
+      delete newErrors.email;
+    }
+
+    if (name === 'password' && value.length < 6) {
+      newErrors.password = "Password must be at least 6 characters";
+    } else {
+      delete newErrors.password;
+    }
+
+    setErrors(newErrors);
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      const response = await fetch("http://localhost:5000/signin", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData), // Convert formData to JSON string
-      });
+    // try {
+    //   const response = await fetch("http://localhost:5000/signin", {
+    //     method: "POST",
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //     body: JSON.stringify(formData), // Convert formData to JSON string
+    //   });
 
-      const data = await response.json(); // Parse the JSON from the response
+    //   const data = await response.json(); // Parse the JSON from the response
 
-      if (response.status === 200) {
-        setMessage(data.message); // If response is OK, show success message
-        navigate("/");
-      } else {
-        setMessage(data.message || "Sign-in failed"); // Handle error responses
-      }
-    } catch (error) {
-      setMessage("An error occurred while signing in."); // Handle network errors or other issues
-    }
+    //   if (response.status === 200) {
+    //     setMessage(data.message); // If response is OK, show success message
+    //     navigate("/");
+    //   } else {
+    //     setMessage(data.message || "Sign-in failed"); // Handle error responses
+    //   }
+    // } catch (error) {
+    //   setMessage("An error occurred while signing in."); // Handle network errors or other issues
+    // }
   };
 
   return (
@@ -56,6 +80,8 @@ function SignIn() {
               required
               placeholder="Enter your email"
             />
+            {errors.email && <p style={{ color: 'red' }}>{errors.email}</p>}
+
           </div>
 
           <div className="form-group">
@@ -69,6 +95,7 @@ function SignIn() {
               required
               placeholder="Enter your password"
             />
+            {errors.password && <p style={{ color: 'red' }}>{errors.password}</p>}
           </div>
 
           <button type="submit" className="sign-in-btn">
@@ -82,12 +109,12 @@ function SignIn() {
         </div>
       </div>
 
-      <div className="sign-in-image">
+      {/* <div className="sign-in-image">
         <img
           src={signin_image}
           className="form-image"
         />
-      </div>
+      </div> */}
     </div>
   );
 }

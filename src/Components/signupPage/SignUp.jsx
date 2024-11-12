@@ -11,12 +11,43 @@ function SignUp() {
     confirmPassword: "",
   });
 
+  const [errors, setErrors] = useState({});
+
   const handleChange = (e) => {
+
+    let newErrors = { ...errors };
+
     const { name, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
     }));
+
+    if (name === 'name' && !value.trim()) {
+      newErrors.name = "Name is required";
+    } else {
+      delete newErrors.name;
+    }
+
+    if (name === 'email' && !value.includes('@')) {
+      newErrors.email = "Valid email required";
+    } else {
+      delete newErrors.email;
+    }
+
+    if (name === 'password' && value.length < 6) {
+      newErrors.password = "Password must be at least 6 characters";
+    } else {
+      delete newErrors.password;
+    }
+
+    if (name === 'confirmPassword' && value !== formData.password) {
+      newErrors.confirmPass = "Password does not match";
+    } else {
+      delete newErrors.confirmPass;
+    }
+
+    setErrors(newErrors);
   };
 
   const handleSubmit = (e) => {
@@ -44,6 +75,7 @@ function SignUp() {
               required
               placeholder="Enter your name"
             />
+             {errors.name && <p style={{ color: 'red' }}>{errors.name}</p>}
           </div>
 
           <div className="form-group">
@@ -57,6 +89,7 @@ function SignUp() {
               required
               placeholder="Enter your email"
             />
+            {errors.email && <p style={{ color: 'red' }}>{errors.email}</p>}
           </div>
 
           <div className="form-group">
@@ -70,6 +103,7 @@ function SignUp() {
               required
               placeholder="Enter your password"
             />
+            {errors.password && <p style={{ color: 'red' }}>{errors.password}</p>}
           </div>
 
           <div className="form-group">
@@ -83,6 +117,7 @@ function SignUp() {
               required
               placeholder="Confirm your password"
             />
+            {errors.confirmPass && <p style={{ color: 'red' }}>{errors.confirmPass}</p>}
           </div>
           <button type="submit" className="sign-up-btn">
             Sign Up
@@ -95,9 +130,9 @@ function SignUp() {
         </div>
       </div>
 
-      <div className="sign-in-image">
+      {/* <div className="sign-in-image">
         <img src={signup_image} className="form-image1"/>
-      </div>
+      </div> */}
     </div>
   );
 }
