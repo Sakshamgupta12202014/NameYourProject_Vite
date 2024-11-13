@@ -5,13 +5,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-top: 40px; */
+    margin-left: 15px;
 }
 
 .header .header-image{
     width: auto;
     transition: max-width 1s;
-    border-radius: 20px;
+    border-radius: 2px;
     padding-top: 50px;
 }
 
@@ -26,7 +26,7 @@
 }
 
 .header .header-text{
-    font-family: "Amatic SC", sans-serif;
+    font-family: "Amatic-sc, sans-serif";
     transition: font-size 1s;
 }
 
@@ -38,4 +38,6 @@
 
 .header-text-contracted {
     font-size: 20px;
+    color: rgb(0, 140, 255);
+
 }

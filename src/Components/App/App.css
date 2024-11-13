@@ -4,9 +4,35 @@ body {
 }
 
 
-
 h1 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-style: italic;
+}
+
+.cart-button {
+  padding: 12px 25px;
+  margin-top: 20px;
+  margin-left: 30px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+}
+
+.cart-button:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+  transform: scale(1.05); /* Slight zoom-in effect */
+}
+
+.cart-button:active {
+  background-color: #003f7d; /* Even darker shade for active state */
+}
+
+.cart-button:focus {
+  outline: none; /* Removes the default focus outline */
 }
 

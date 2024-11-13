@@ -11,7 +11,9 @@ function FollowUs() {
       
       <Navbar/>
 
-      <div className="followUsContainer">
+      <div className="outerFollowUsContainer">
+
+        <div className="followUsContainer">
         {/* Page Header */}
         <h1 className="followUsTitle">Follow Us & Stay Connected</h1>
         <p className="followUsSubtitle">
@@ -51,7 +53,7 @@ function FollowUs() {
             rel="noopener noreferrer"
             className="socialMediaLink"
           >
-           <FontAwesomeIcon icon={faLinkedin} beat />
+           <FontAwesomeIcon icon={faLinkedin} />
           </a>
         </div>
 
@@ -61,6 +63,7 @@ function FollowUs() {
         </p>
 
         
+      </div>
       </div>
     </div>
   );

@@ -2,11 +2,12 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./HomePage/Home";
 import App from "./App/App";
-// import "./Start.css";
 import FollowUs from "./followUs/FollowUs";
 import About from "./AboutUs/About";
 import SignIn from "./signinPage/SignIn";
 import SignUp from "./signupPage/SignUp";
+import Cart from "./NameCart/Cart";
+// import "./Start.css";
 
 
 function Start() {
@@ -52,6 +53,7 @@ function Start() {
         <Route path="/about" element={<About />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/cart" element={<Cart  />} /> {/* Route for Cart */}
       </Routes>
     </Router>
   );

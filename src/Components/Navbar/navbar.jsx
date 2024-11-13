@@ -34,7 +34,7 @@ function Navbar() {
           <Link to="/signin" className="nav-link">
             <button className="nav-link-btn">Sign-in</button>
           </Link>
-          /
+          <span style={{color:"white"}}>/</span>
           <Link to="/signup" className="nav-link">
             <button className="nav-link-btn">Sign-up</button>
           </Link>

@@ -1,81 +1,89 @@
 /* General Styling */
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+
 body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: antiquewhite;
-  }
-  
-  .aboutUsContainer {
-    text-align: center;
-    padding: 50px;
-    background-color: white;
-    max-width: 800px;
-    margin: 50px auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Title and Introduction */
-  .aboutUsTitle {
-    font-family: 'Amatic SC';
-    font-size: 3rem;
-    margin-bottom: 20px;
-  }
-  
-  .aboutUsIntro {
-    font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 30px;
-  }
-  
-  /* Mission Section */
-  .missionSection {
-    margin-bottom: 40px;
-  }
-  
-  /* Team Section */
-  .teamSection {
-    margin-bottom: 40px;
-  }
-  
-  .teamMembers {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
-  .teamMember {
-    max-width: 250px;
-    margin: 20px;
-    text-align: center;
-  }
-  
-  .teamImage {
-    width: 100%;
-    border-radius: 50%;
-  }
-  
-  .teamMember h3 {
-    margin: 10px 0;
-  }
-  
-  /* Call to Action */
-  .ctaSection {
-    margin-top: 40px;
-  }
-  
-  .ctaButton {
-    background-color: #00796b;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    margin-top: 20px;
-  }
-  
-  .ctaButton:hover {
-    background-color: #004d40;
-  }
-  
+  margin: 0;
+
+  background-color: antiquewhite;
+}
+
+.outerContainer{
+  background-color: white;
+  width: 90%;
+  margin: auto;
+}
+
+.aboutUsContainer {
+  text-align: center;
+  padding: 50px;
+  background-color: white;
+  max-width: 800px;
+  margin:  auto;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+}
+
+/* Title and Introduction */
+.aboutUsTitle {
+  font-family: "Amatic-sc, sans-serif";
+  font-style: normal;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.aboutUsIntro {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Mission Section */
+.missionSection {
+  margin-bottom: 40px;
+}
+
+/* Team Section */
+.teamSection {
+  margin-bottom: 40px;
+}
+
+.teamMembers {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.teamMember {
+  max-width: 250px;
+  margin: 20px;
+  text-align: center;
+}
+
+.teamImage {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.teamMember h3 {
+  margin: 10px 0;
+}
+
+/* Call to Action */
+.ctaSection {
+  margin-top: 40px;
+}
+
+.ctaButton {
+  background-color: #00796b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.ctaButton:hover {
+  background-color: #004d40;
+}

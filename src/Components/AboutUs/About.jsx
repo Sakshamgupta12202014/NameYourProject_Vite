@@ -9,7 +9,9 @@ function About() {
 
     <Navbar />
 
-      <div className="aboutUsContainer">
+      <div className="outerContainer">
+
+        <div className="aboutUsContainer">
         {/* Page Header */}
         <h1 className="aboutUsTitle">About Us</h1>
         <p className="aboutUsIntro">
@@ -22,9 +24,9 @@ function About() {
         <section className="missionSection">
           <h2
             style={{
-              fontFamily: "Amatic SC",
+              fontFamily: "Amatic-sc, sans-serif",
               fontSize: "35px",
-              fontWeight: "600",
+              fontWeight: "500",
             }}
           >
             Our Mission
@@ -92,6 +94,8 @@ function About() {
             <button className="ctaButton">Generate Names</button>
           </Link>
         </div>
+      </div>
+
       </div>
     </div>
   );

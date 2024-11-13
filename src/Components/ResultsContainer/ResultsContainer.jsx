@@ -1,12 +1,16 @@
 import React from "react";
 import "./ResultsContainer.css";
 
-const ResultsContainer = ({ suggestedNames, showHeading }) => {
+const ResultsContainer = ({ suggestedNames, showHeading,onAddToCart }) => {
   const limitedSuggestions = suggestedNames.slice(0, 20);
 
   const suggestNameJsx = limitedSuggestions.map((suggestName) => {
     return <p>{suggestName}</p>;
   });
+
+  const handleClick = (name) => {
+    onAddToCart(name); // Trigger the add-to-cart action
+  };
 
   return (
     <div style={{ backgroundColor: "antiquewhite" }}>
@@ -16,8 +20,8 @@ const ResultsContainer = ({ suggestedNames, showHeading }) => {
       <div className="outerDiv">
         {suggestNameJsx.map((element, index) => {
           return (
-            <div key={index} className="resultBox">
-              {element}
+            <div key={index} className="resultBox" onClick={() => {handleClick(element)}}>
+              {element} 
             </div>
           );
         })}
