@@ -80,9 +80,9 @@ function Home() {
         <div className="examplesSection">
           <h2 style={{ textAlign: "center" }}>Get Inspired</h2>
           <div className="exampleNames">
-            <div className="exampleName">TechPulse</div>
-            <div className="exampleName">IdeaSphere</div>
-            <div className="exampleName">Innovato</div>
+            <a href="https://www.ideanamer.co/" ><div className="exampleName">IdeaNamer.co</div></a>
+            <a href="https://startupill.com/idea-to-identity-how-ideanamer-co-is-revolutionizing-startup-naming/" ><div className="exampleName">STARTUP PILL</div></a>
+            <a href="https://www.producthunt.com/products/ideanamer-co"><div className="exampleName">PRODUCT HUNT</div></a>
             <div className="exampleName">ProjectZen</div>
           </div>
         </div>
